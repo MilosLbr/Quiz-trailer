@@ -1,0 +1,150 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+.video-title, .video-subtitle{
+    text-align: center;
+}
+.video-title{
+    margin-bottom: 2px;
+}
+.video-subtitle{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.container-video{
+    width: 50%;
+    margin: 20px auto;
+    
+}
+.video-player{
+    width: 100%;
+    margin: 0 auto;
+}
+.control-bar{
+    background-color: rgb(75, 75, 75);
+    height: 20px;
+    padding: 14px;  
+    margin-top: -4px;
+    display: flex;
+    align-items: center;
+}
+.button-container{
+    display: inline-block;
+    min-width: 55px;
+    width: 30%;
+    text-align: center;
+}
+.play-button{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.play-button:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
+}
+.mute-button{
+    min-width: 82px;
+    color: white;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.mute-button:hover{
+    color: white;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    cursor: pointer;
+}
+.mute-button:focus{
+    box-shadow: 0 0 0 2px #3fa3c2;
+    outline: none;
+}
+.current-time{
+    color: white;
+}
+.duration-time{
+    color: rgb(155, 155, 155);
+}
+.other-controls{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.other-controls input[type='range']{
+    max-width: 20%;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -2px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  }
+.answer{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 1.1em;
+}
+
+.answer:hover{
+    cursor: pointer;
+    transform: translate(1px, 0);
+    box-shadow: inset -1px -1px 6px white;
+}
+
+.hidden{
+    display: none;  
+}
+
+.number-of-correct-answers{
+    margin-top: 20px;
+}
+button{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.end-message{
+    margin-bottom: 1rem;
+    padding: 20px;
+    font-size: 1.1rem;
+    background-color: white;
+    border: 1px solid #aaa;
+    width: 80%;
+    margin: 25px auto;
+    border-left: 3px solid #3fa3c2;
+}
+.restart-button-container{
+    text-align: center;
+}
+.restart-button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.restart-button:hover{
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
